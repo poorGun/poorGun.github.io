@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <title>UI-Demo</title>
+</head>
+
+<body>
+    <div id="app">
+        <!-- 头部导航栏 -->
+        <header class="header">
+            <div class="headerWrap">
+                <div class="iphoneStatus"></div>
+                <div class="devTitle">
+                    <div class="barLeft">
+                        <div class="goApp"></div>
+                    </div>
+                    <div class="devName">华为智选台灯</div>
+                    <div class="barRight">
+                        <div class="devMore"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="appMargin">
+            <!-- 设备图片+logo -->
+            <section class="devImg">
+                <div class="devTop"></div>
+                <div class="deviceImg"></div>
+                <div class="logo"></div>
+            </section>
+            <!-- 设备状态栏-->
+            <section class="devStatus">
+                <div class="statusLeft">已开启</div>
+                <div class="statusMiddle">
+                    <div class="up">00:20:00</div>
+                    <div class="down">倒计时关</div>
+                </div>
+                <div id="statusRight" class="statusRight">
+                </div>
+            </section>
+            <!-- 信息展示区 -->
+            <section class="devInfo">
+                <ul class="infoList">
+                    <li class="infoItem">
+                        <div class="infoWrap">
+                            <p class="infoNum">
+                                <span class="number">2</span>
+                                <span class="unit">%</span>
+                            </p>
+                            <p class="infoName">信息展示</p>
+                        </div>
+                    </li>
+                    <div class="infoLine"></div>
+                    <li class="infoItem">
+                        <div class="infoWrap">
+                            <p class="infoNum">
+                                <span class="number">1200</span>
+                                <span class="unit">㎡</span>
+                            </p>
+                            <p class="infoName">净化空气</p>
+                        </div>
+                    </li>
+                    <div class="infoLine"></div>
+                    <li class="infoItem">
+                        <div class="infoWrap">
+                            <p class="infoNum">
+                                <span class="number">800</span>
+                                <span class="unit">mg</span>
+                            </p>
+                            <p class="infoName">过滤颗粒物</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <!-- 功能操作区 -->
+            <section class="devFn">
+                <ul class="fnList">
+                    <li class="fnItem padThreeItem1">
+                        <div class="fnWrap">
+                            <p class="fnName">短卡片</p>
+                        </div>
+                        <div class="fnBox">
+                            <div class="fnImg fnImgItem1"></div>
+                        </div>
+                    </li>
+                    <li class="fnItem padThreeItem2">
+                        <div class="fnWrap">
+                            <p class="fnName">功能启用</p>
+                            <p class="fnStatus">已启用</p>
+                        </div>
+                        <div class="fnBox">
+                            <div class="fnImg fnImgItem2"></div>
+                        </div>
+                    </li>
+                    <li class="fnItem spinner padThreeItem3">
+                        <div class="fnWrap">
+                            <p class="fnName">列表弹窗</p>
+                        </div>
+                        <div class="fnBox">
+                            <div class="fnImg fnImgItem3"></div>
+                        </div>
+                        <ul class="spinnerWrap appear">
+                            <li class="spinnerList">1档</li>
+                            <li class="spinnerList">2档</li>
+                            <li class="spinnerList checkedBg">3档</li>
+                            <li class="spinnerList">4档</li>
+                            <li class="spinnerList">5档</li>
+                            <li class="spinnerList">6档</li>
+                            <li class="spinnerList">7档</li>
+                        </ul>
+                    </li>
+
+                    <li class="fnItem singleList padTwoItem1">
+                        <div class="fnWrap">
+                            <p class="fnName">底部弹窗</p>
+                        </div>
+                        <div class="fnBox">
+                            <div class="fnImg fnImgItem4"></div>
+                        </div>
+                    </li>
+                    <li class="fnItem padTwoItem2">
+                        <div class="fnWrap">
+                            <p class="fnName">滑动开关</p>
+                            <p class="fnSubtitle">长卡片</p>
+                        </div>
+                        <div class="fnBox">
+                            <div class="fnSlider">
+                                <div class="sliderBtn"></div>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li class="fnItem iphone">
+                        <div class="sliderBar">
+                            <div class="sliderWrap">
+                                <p class="sliderName">滑动条</p>
+                                <p class="sliderStatus">11%</p>
+                            </div>
+                            <div class="rangWrap">
+                                <div class="rang">
+                                    <div class="stripLeft"></div>
+                                    <div class="stripRight"></div>
+                                    <div class="slider"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="statement">
+                    <div class="stateWrap">
+                        <p class="stateName">隐私协议</p>
+                    </div>
+                    <div class="stateBox">
+                        <div class="stateImg"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- 模式列表弹窗 -->
+        <div class="modeList modeListAppear">
+            <div class="modeWrap">
+                <div class="modeTitle">模式列表</div>
+                <ul>
+                    <li class="modeItem">
+                        <div class="modeName">节能模式</div>
+                        <div class="modeImg modeImgOff"></div>
+                        <img class="modeImg" src="./img/light/public/ic_radio_off.png"></img>
+                    </li>
+                    <li class="modeItem">
+                        <div class="modeName">流光模式</div>
+                        <div class="modeImg modeImgOn"></div>
+                        <img class="modeImg" src="./img/light/public/ic_radio_on.png"></img>
+                    </li>
+                    <li class="modeItem">
+                        <div class="modeName">七彩模式</div>
+                        <div class="modeImg modeImgOff"></div>
+                        <img class="modeImg" src="./img/light/public/ic_radio_off.png"></img>
+                    </li>
+                    <li class="modeItem">
+                        <div class="modeName">温馨模式</div>
+                        <div class="modeImg modeImgOff"></div>
+                        <img class="modeImg" src="./img/light/public/ic_radio_off.png"></img>
+                    </li>
+                </ul>
+
+                <div class="bottomBtn">
+                    <div class="fnbtn">取消</div>
+                    <div class="line"></div>
+                    <div class="fnbtn">确定</div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 隐私协议弹窗 -->
+        <div class="statementPopup">
+            <div class="statementWrap">
+                <div class="statementTitle">隐私声明</div>
+                <div class="statementContent">
+                    <div class="statementBox">
+                        <p class="">XXXXX公司向您提供XXXX产品的XXXXX服务，请您务必认真阅读本声明，在确认充分了解并同意后使用我们的产品和服务。如果您不同意声明的内容，
+                            您应当立即停止使用。
+                        </p>
+                        <div class="stateRules">
+                            <p>在我们向您提供产品和服务的过程中，我们需要收集您的以下信息：</p>
+                            <p>1.为了实现测量声音分贝功能，我们会调用您的麦克风进行声音的采集。</p>
+                            <p>2.为了实现睡眠报告功能，我们会收集您使用本产品所产生的睡眠数据，包括：睡眠时间、睡眠效率、睡眠时长。</p>
+                        </div>
+                        <p>点击“同意”，即代表您已充分了解并同意上述内容。</p>
+                    </div>
+                </div>
+                <div class="stateBtn">
+                    <div class="stateFn">取消</div>
+                    <div class="line"></div>
+                    <div class="stateFn">同意</div>
+                </div>
+            </div>
+        </div>
+        <div class="backgroundColor"></div>
+        <div class="addHeight"></div>
+    </div>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.6.8/lottie_svg.min.js"></script>
+<script src="./js/switch.js"></script>
+<script src="./js/switch_dark.js"></script>
+<script src='./js/index.js'></script>
+
+</html>

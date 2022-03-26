@@ -1,0 +1,248 @@
+#second{
+    width:100%;
+    height:100%;
+    background: #f1f3f5;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+#second::-webkit-scrollbar {
+    width:0px;
+    height:0px;
+}
+
+.dark {
+    width: 100%;
+}
+
+
+.seHeader {
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    background: #f1f3f5;
+}
+
+.dark .seHeader {
+    background: black;
+}
+
+.seHeaderWrap {
+    margin:0 1.2rem;
+}
+.seHeader .seIphone {
+    width: 100%;
+    height:0rem;
+}
+
+.seHeader .seTitle {
+    width:100%;
+    height:5.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.seHeader .seTitle .seName {
+    flex:1;
+    margin-left:2.4rem;
+    height:3.6rem;
+    line-height: 3.6rem;
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 2rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+
+.dark .seHeader .seTitle .seName {
+    color:rgba(255, 255, 255, 0.86);
+}
+
+.seHeader .seLeft {
+    width:2rem;
+    height:2rem;
+    margin-left: 1.2rem;
+}
+
+.seLeft .seBack {
+    width:2rem;
+    height: 2rem;
+    background: url('../img/light/public/ic_back.png') no-repeat;
+    background-size: cover;
+}
+.dark .seLeft .seBack {
+    background: url('../img/dark/public/ic_back.png')  no-repeat ;
+    background-size: cover;
+}
+
+.sContent{
+    margin: 0 2.4rem;
+    position: relative;
+    flex: 1;
+    overflow: auto;
+    font-size: 1.6rem;
+}
+
+.sContent .sRules{
+    margin:0.8rem 0;
+    color: rgba(0,0,0,0.6);
+}
+
+.dark .sContent{
+    color:rgba(255, 255, 255, 0.86);
+}
+
+.dark .sContent .sRules{
+    margin:0.8rem 0;
+    color: rgba(255,255,255,0.6);
+}
+
+.revocation {
+    width:50%;
+    height:4rem;
+    line-height: 3.6rem;
+    text-align: center;
+    position:fixed;
+    left: 50%;
+    bottom: 2.4rem;
+    -webkit-transform: translate(-50%,0);
+    transform: translate(-50%,0);
+    background: rgba(0,0,0,0.05);
+    color: #0a59f7;
+    font-size: 1.6rem;
+    border-radius: 3rem;
+}
+
+.dark .revocation{
+    background: rgba(255,255,255,0.1);
+    color: #5291ff;
+}
+
+
+/* 隐私声明弹窗 -----------------------*/
+.stopPopup {
+    width:100%;
+    position: fixed;
+    z-index: 100;
+    padding:0 1.2rem;
+    bottom:1.6rem;
+    display: none;
+    left: 50%;
+    -webkit-transform: translate(-50%,0);
+    transform: translate(-50%,0);
+}
+
+.stopPopup .stopWrap{
+    width: 100%;
+    border-radius: 2.4rem;
+    padding: 0 2.4rem;
+    overflow: hidden;
+    background: white;
+}
+
+.dark .stopPopup .stopWrap{
+    background: #363636;
+}
+
+.stopPopup .stopWrap .stopTitle{
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    color: rgba(0,0,0,0.9);
+    height: 5.6rem;
+    line-height: 5.6rem;
+}
+
+.dark .stopPopup .stopWrap .stopTitle{
+    color: rgba(255,255,255,0.9);
+}
+
+.stopPopup .stopWrap .stopContent{
+    font-size: 1.6rem;
+    color: rgba(0,0,0,0.9);
+    overflow-y: auto;
+    display: inline-block;
+}
+
+.dark .stopPopup .stopWrap .stopContent{
+    color: rgba(255, 255, 255, 0.86);
+}
+
+.stopPopup .stopWrap .stopBox{
+    max-height: 50rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.stopPopup .stopWrap .stopContent .stateRules{
+    margin: 0.8rem 0rem;
+}
+
+.stopBtn{
+    margin-top:0.8rem;
+    margin-bottom: 1.6rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stopBtn .stopFn{
+    height:2.4rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.1rem;
+    flex:1;
+    text-align: center;
+    color: #0a59f7;
+    font-size: 1.6rem;
+}
+
+.stopBtn div:nth-child(3){
+    color:#E84026;
+}
+
+.dark .stopBtn .stopFn{
+    color: #5291ff;
+}
+
+.dark .stopBtn div:nth-child(3){
+    color:#d94838;
+}
+
+.stopBtn .line{
+    width:0.1rem;
+    height:2.4rem;
+    align-self: center;
+    background: rgba(0, 0, 0, 0.2);
+    transform: scaleX(0.25);
+}
+
+.dark .stopBtn .line{
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.backgroundColor {
+    display: none;
+    width:100%;
+    height:100%;
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    top:0;
+    background-color: rgba(0,0,0,0.2);
+    box-sizing: border-box;
+}
+
+.stopAppear {
+    animation: stopAppear 300ms ease-in-out 0ms;
+}
+
+@keyframes stopAppear {
+    0% {
+        bottom: -100%;
+    }
+    to {
+        bottom: 1.6rem;
+    }
+}
