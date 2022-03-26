@@ -1,0 +1,98 @@
+/*禁止页面复制*/
+
+* {
+  -webkit-touch-callout: none;
+  /*系统默认菜单被禁用*/
+  -webkit-user-select: none;
+  /*webkit浏览器*/
+  -khtml-user-select: none;
+  /*早期浏览器*/
+  -moz-user-select: none;
+  /*火狐*/
+  -ms-user-select: none;
+  /*IE10*/
+  user-select: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+  line-height: 1.3;
+  font-weight: 400;
+}
+
+input,
+textarea {
+  -webkit-user-select: auto !important;
+  -khtml-user-select: auto !important;
+  -moz-user-select: auto !important;
+  -ms-user-select: auto !important;
+  -o-user-select: auto !important;
+  user-select: auto !important;
+}
+
+html {
+  font-family: 'PingFangSC-Regular', 'Roboto', "Helvetica Neue", "Helvetica", "STHeiTi", "Microsoft YaHei", "Arial", "sans-serif", "PingFangSC-Medium";
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  background: rgba(242, 242, 242, 0.95);
+}
+
+html,
+body,
+#app {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none
+}
+
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style: none;
+}
+.widthLong .container-s{
+  left: calc(25% - 6px) !important;
+  right:calc(25% - 6px) !important;
+  bottom: 50% !important;
+  transform: translateY(50%);
+}
+.widthLong .containers{
+  left: calc(25% - 6px) !important;
+  right:calc(25% - 6px) !important;
+  bottom: 50% !important;
+  transform: translateY(50%);
+}
+.widthLong .alert-message{
+  left: calc(25% - 6px) !important;
+  right:calc(25% - 6px) !important;
+  bottom: 50% !important;
+  transform: translateY(50%);
+}
+.widthLong .container{
+  left: calc(25% - 6px) !important;
+  right:calc(25% - 6px) !important;
+  bottom: 50% !important;
+  transform: translateY(50%);
+}
+.widthLong .e-calendar{
+  left: calc(25% - 6px) !important;
+  right:calc(25% - 6px) !important;
+}
+.widthLong .wrapper{
+  left: calc(25% - 6px) !important;
+  right:calc(25% - 6px) !important;
+}
