@@ -1,0 +1,309 @@
+#app {
+    width:100%;
+    height:100%;
+    background: #f1f3f5;
+    overflow: auto;
+    position: relative;
+}
+
+.dark {
+    width: 100%;
+}
+
+#app::-webkit-scrollbar {
+    width:0px;
+    height:0px;
+}
+
+#app .addHeight {
+    height:2.8rem;
+}
+
+#app .appMargin {
+    margin: 0 1.2rem;
+    position: relative;
+}
+
+.backgroundColor {
+    display: none;
+    width:100%;
+    height:100%;
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    top:0;
+    background-color: rgba(0,0,0,0.2);
+    box-sizing: border-box;
+}
+.dark .backgroundColor {
+    display: none;
+    width:100%;
+    height:100%;
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    top:0;
+    background-color: rgba(0,0,0,0.4);
+    box-sizing: border-box;
+}
+
+/* ------------标题栏 ------------------*/
+.header {
+    width:100%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    background: #f1f3f5;
+    z-index:10;
+}
+
+.dark .header {
+    background: black;
+}
+
+.headerWrap {
+    margin:0 1.2rem;
+}
+.header .iphoneStatus {
+    width: 100%;
+}
+
+.header .devTitle {
+    width:100%;
+    height:5.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .devTitle .devName {
+    flex:1;
+    padding:0 0.4rem 0 0.4rem;
+    height:3.6rem;
+    line-height: 3.6rem;
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 2rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+
+.dark .header .devTitle .devName {
+    color:rgba(255, 255, 255, 0.86);
+}
+
+.header .barLeft {
+    width:3.6rem;
+    height:3.6rem;
+    display: flex;
+    align-items: center;
+}
+
+.barLeft .goApp {
+    margin: auto;
+    width:2.4rem;
+    height: 2.4rem;
+    background: url('../img/light/public/ic_back.png') no-repeat;
+    background-size: cover;
+}
+.dark .barLeft .goApp {
+    background: url('../img/dark/public/ic_back.png')  no-repeat ;
+    background-size: cover;
+}
+
+.header .barRight {
+    width:4.8rem;
+    height:4.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.barRight .devMore {
+    width:2.4rem;
+    height: 2.4rem;
+    background: url('../img/light/public/ic_set.png') no-repeat;
+    background-size: cover;
+}
+
+.dark .barRight .devMore {
+    background: url('../img/dark/public/ic_set.png') no-repeat;
+    background-size: cover;
+}
+
+/* --------------设备+logo --------------------*/
+.devImg {
+    width:100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.devImg .devTop{
+    height:5.6rem;
+}
+
+.devImg .deviceImg {
+    width:25.2rem;
+    height:25.2rem;
+    align-self: center;
+    background: url('../img/light/device.png') no-repeat;
+    background-size: cover;
+}
+
+.dark .devImg .deviceImg {
+    opacity: 0.86;
+}
+
+.devImg .logo {
+    width:7rem;
+    height: 1.8rem;
+    align-self: center;
+    background-image: url('../img/light/logo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.dark .devImg .logo {
+    background-color: #999999;
+}
+
+/* ------------设备状态 --------------*/
+.devStatus {
+    width: 100%;
+    height: 8.8rem;
+    margin-top:1rem;
+    position: relative;
+    border-radius: 1.6rem;
+    background: #fff;
+}
+
+.dark .devStatus {
+    background: #303030; 
+}
+
+.devStatus .statusLeft {
+    width:24%;
+    position: absolute;
+    left: 1.6rem;
+    top: 50%;
+    -webkit-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+    font-size: 1.8rem;
+    color: rgba(0, 0, 0, 0.9);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+
+.dark .devStatus .statusLeft {
+    color:rgba(255, 255, 255, 0.86);
+}
+
+/*------------------ 功能列表区域-------------- */
+.devFn {
+    position: relative;
+}
+.fnList {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.fnList .fnItem {
+    position: relative;
+    width: calc((100% - 1.2rem)/2);
+    height:6.4rem;
+    flex-grow: 1;
+    margin-top:1.2rem;
+    background: white;
+    border-radius: 1.6rem;
+}
+
+.dark .fnList .fnItem {
+    background: #303030;
+}
+
+.fnList .fnItem:nth-child(even) {
+    margin-left: 1.2rem;
+}
+
+.fnList .fnItem .fnWrap {
+    width:48%;
+    position: absolute;
+    left: 1.6rem;
+    top: 50%;
+    -webkit-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+}
+
+.fnList .fnItem .fnWrap .fnName {
+    font-size: 1.6rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    color:rgba(0,0,0,0.9);
+}
+
+.dark .fnList .fnItem .fnWrap .fnName{
+    color: rgba(255, 255, 255, 0.86);
+}
+
+.fnList .fnItem .fnWrap .fnStatus {
+    padding-top: 0.2rem;
+    font-size: 1.2rem;
+    color: #007DFF;
+}
+
+.dark .fnList .fnItem .fnWrap .fnStatus{
+    color: rgba(255,255,255,0.6)
+}
+
+.fnList .fnItem .fnWrap .fnSubtitle {
+    padding-top: 0.2rem;
+    font-size: 1.2rem;
+    color: rgba(0,0,0,0.6)
+}
+
+.dark .fnList .fnItem .fnWrap .fnSubtitle{
+    color: rgba(255,255,255,0.6)
+}
+
+.fnList .fnItem .fnBox {
+    position: absolute;
+    right:1.6rem;
+    top: 50%;
+    -webkit-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+}
+
+.fnList .fnItem .fnBox .fnImg{
+    width:2.4rem;
+    height:2.4rem;
+    display : block;
+}
+
+/* -------------滑块 -------------*/
+.fnSlider{
+    position: relative;
+    width:3.6rem;
+    height:2rem;
+    border-radius:1.6rem;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.dark .fnSlider{
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.fnSlider .sliderBtn{
+    width:1.6rem;
+    height:1.6rem;
+    background: white;
+    position: absolute;
+    top:50%;
+    right:1.8rem;
+    -webkit-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+    border-radius: 1.5rem;
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.4);
+}
+
+

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <title>UI-Demo</title>
+</head>
+<body>
+    <div id="app">
+        <!-- 头部导航栏 -->
+        <header class="header">
+            <div class="headerWrap">
+                <div class="iphoneStatus"></div>
+                <div class="devTitle">
+                    <div class="barLeft">
+                        <div class="goApp"></div>
+                    </div>
+                    <div class="devName">华为智选台灯</div>
+                    <div class="barRight">
+                        <div class="devMore"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="appMargin"> 
+            <!-- 设备图片+logo -->
+            <section class="devImg">
+                <div class="devTop"></div>
+                <div class="deviceImg"></div>
+                <div class="logo"></div>
+            </section>
+            <!-- 设备状态栏-->
+            <section class="devStatus">
+                <div class="statusLeft">已连接</div>
+            </section>
+            <!-- 功能操作区 -->
+            <section class="devFn">
+                <ul class="fnList">
+                    <li class="fnItem">
+                        <div class="fnWrap">
+                            <p class="fnName">加热</p>
+                            <p class="fnSubtitle">已开启</p>
+                        </div>
+                        <div class="fnBox">
+                            <div class="fnSlider">
+                                <div class="sliderBtn"></div>
+                            </div>
+                        </div> 
+                    </li>
+                </ul>
+            </section>
+        </div>
+        
+        <div class="backgroundColor"></div>
+        <div class="addHeight"></div>
+    </div>
+</body>
+<script src='./js/index.js'></script>
+<script src='./js/ble.js'></script>
+</html>
