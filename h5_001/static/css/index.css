@@ -1,0 +1,100 @@
+/* 设备图片和logo区 */
+.devImg .deviceImg {
+    background: url('../img/fanMain.png') no-repeat;
+    background-size: cover;
+}
+.devImg .logo {
+    background: url('../img/head.png') no-repeat;
+    background-size: cover;
+}
+.dark .devImg .deviceImg {
+    background: url('../img/fanMain.png') no-repeat;
+    background-size: cover;
+}
+.dark .devImg .logo {
+    background: url('../img/head.png') no-repeat;
+    background-size: cover;
+}
+
+/* -----------------列表弹窗----------------- */
+.spinnerWrap {
+    position: absolute;
+    /* width: 158px; */
+    background: #FFFFFF;
+    /* opacity: 90%; */
+    border-radius: 1.6rem;
+	padding: 0.4rem;
+    bottom: 15.2rem;
+    right: 0.1%;
+    display: none;
+    /* box-shadow:  #00001E26 0 10px 50px; */
+    box-shadow:  rgba(0,0,30,.1) 0 1rem 5rem;
+    box-sizing: border-box;
+}
+.dark .spinnerWrap {
+    background: #363636;
+}
+
+.spinnerWrap .spinnerList {
+    padding-left: 1.2rem;
+    font-size: 1.6rem;
+    height: 4.8rem;
+    line-height: 4.8rem;
+    border-radius: 1.2rem;
+    color: #000000E5;
+    background: #FFF;
+    position: relative;
+    top: 50%;  
+    box-sizing: border-box; 
+}
+
+.dark .spinnerWrap .spinnerList {
+    background: #363636;
+    color: rgba(255, 255, 255, 0.86);
+}
+
+.spinnerWrap .choose {
+    color: #0A59F7;
+    /* background: #0A59F719; */
+    background: rgba(10,89,247,0.1);
+}
+
+.dark .spinnerWrap .choose {
+    color: #5291FF;
+    /* background-color: #5291FF 66; */
+    background: rgba(82,145,255,0.4);
+}
+
+.spinnerWrap .spinnerList:not(:last-child):after {
+    position: absolute;
+    /* width: calc(100% - 32px); */
+    /* width: 100%; */
+    content: '';
+    display: block;
+    height: 0.025rem;
+    left: 1.2rem;
+    right:1.2rem;
+    bottom: 0;
+    /* transform: scaleY(11); */
+    background: rgba(0, 0, 0, 0.2);
+    /* margin: 0 16px; */
+    box-sizing: border-box;
+
+}
+
+.dark .spinnerWrap .spinnerList:not(:last-child):after {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.appear {
+    animation: appear 100ms ease-in-out 0ms;
+}
+
+@keyframes appear {
+    0% {
+        height: 0px;
+    }
+    to {
+        height: 192px;
+    }
+}

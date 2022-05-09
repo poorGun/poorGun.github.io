@@ -1,0 +1,41 @@
+<svg id="_grid_item_entrances_icon" data-name="✏️grid/item/entrances/icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="48" viewBox="0 0 48 48">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #db6b42;
+      }
+
+      .cls-3 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <path id="Combined_Shape" data-name="Combined Shape" class="cls-1" d="M9,15.5V1.5a1.5,1.5,0,1,1,3,0v14a1.5,1.5,0,1,1-3,0Zm-9,0V1.5a1.5,1.5,0,1,1,3,0v14a1.5,1.5,0,1,1-3,0Z" transform="translate(6 3.5)"/>
+    </clipPath>
+  </defs>
+  <g id="grid_item_entrances_icon" data-name="grid/item/entrances/icon">
+    <g id="Oval_3_Copy_2" data-name="Oval 3 Copy 2">
+      <circle id="Oval_3_Copy_2-2" data-name="Oval 3 Copy 2" class="cls-1" cx="24" cy="24" r="24"/>
+      <circle id="Oval_3_Copy_2-3" data-name="Oval 3 Copy 2" class="cls-2" cx="24" cy="24" r="24"/>
+      <circle id="Oval_3_Copy_2-4" data-name="Oval 3 Copy 2" class="cls-1" cx="24" cy="24" r="24"/>
+    </g>
+    <g id="Public_ic_public_play" data-name="Public/ic_public_play" transform="translate(12 12)">
+      <g id="组_4" data-name="组 4">
+        <path id="Combined_Shape-2" data-name="Combined Shape" class="cls-1" d="M9,15.5V1.5a1.5,1.5,0,1,1,3,0v14a1.5,1.5,0,1,1-3,0Zm-9,0V1.5a1.5,1.5,0,1,1,3,0v14a1.5,1.5,0,1,1-3,0Z" transform="translate(6 3.5)"/>
+        <g id="蒙版组_4" data-name="蒙版组 4" class="cls-3">
+          <g id="Symbol_color-light_colorPrimary" data-name="Symbol/color-light/colorPrimary">
+            <rect id="color_000000" data-name="color/#000000" class="cls-4" width="24" height="24"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

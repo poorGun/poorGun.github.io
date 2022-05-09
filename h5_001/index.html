@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <link defer rel="stylesheet" type="text/css" href="./static/css/common.css">
+    <link rel="stylesheet" type="text/css" href="./static/css/index.css" defer>
+    <title>筋膜枪</title>
+    <style>
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <!-- 头部导航栏 -->
+		<div class="statusBar"></div>
+		<div class="statusBarHolder"></div>
+		<div>
+			<div class="titleBar"></div>
+			<div class="titleBarHolder"></div>
+		</div>
+		
+        <div class="appMargin">
+            <!-- 设备图片+logo -->
+            <div class="devImg">
+                <div class="deviceImg"></div>
+                <div class="logo"></div>
+            </div>
+            <!-- 设备状态栏-->
+            <div class="devStatus">
+				<div class="statusColumn">
+					<div class="statustitle" id="statustitle">已暂停</div>
+				</div>
+				<div class="statusColumn"></div>
+				<div class="statusColumn">
+					<div class="statusButton">
+					    <p id="relink" onclick="link()" style="display: none">重新连接</p>
+					    <img src="./static/img/work_light.svg" class="power" id="power_img" onclick="sendCommandSwitch()">
+					</div>
+				</div>
+            </div>
+            <!-- 信息展示区 -->
+            <section class="devInfo">
+                <ul class="infoList">
+                    <li class="infoItem">
+                        <div class="infoWrap">
+                            <p class="infoNum">
+                                <span class="parameterApparatusNum" id="work_time"></span>
+                                <span class="parameterApparatusDes" id="min">分钟</span>
+                            </p>
+                            <p class="parameterApparatusUnit" id="workTime">工作时长</p>
+                        </div>
+                    </li>
+                    <li class="infoLine"></li>
+                    <li class="infoItem">
+                        <div class="infoWrap">
+                            <p class="infoNum">
+                                <span class="parameterApparatusNum" id="battery"></span>
+                                <span class="parameterApparatusDes" id="eunit">%</span>
+                            </p>
+                            <p class="parameterApparatusUnit" id="batteryinfo">剩余电量</p>
+                        </div>
+                    </li>
+                    </li>
+                    <li class="infoLine"></li>
+                    <li class="infoItem">
+                        <div class="infoWrap">
+                            <p class="infoNum">
+                                <span class="parameterApparatusNum" id="speed"></span>
+                                <span class="parameterApparatusDes" id="min2">转/分</span>
+                            </p>
+                            <p class="parameterApparatusUnit" id="speedinfo">速度</p>
+                        </div>
+                </ul>
+            </section>
+            <!-- ctrl -->
+            <div class="ctrl">
+                <div class="ctrlItem" style="margin-right: 12xp;" id="warm_ctrl">
+                    <div class="ctrlcontent" style="display: flex;flex-direction: column;">
+                        <span id="warm" class="equipmentControlSwitch">加热模式</span>
+						<div class="fnName equipmentControlIcon" id="warmState"></div>
+                    </div>
+                    <div class="fnBox">
+                        <img src="./static/img/ic_enum_off.png" class="hotIcon openIcon" id="warm_img">
+                    </div>
+                </div>
+                <div style="width:12px">
+                </div>
+                <div class="ctrlItem spinner_cd">
+                    <!-- style="margin-left: 12px" -->
+                    <div class="ctrlcontent" style="display: flex;flex-direction: column;" id="timer_choose">
+                        <span id="classctr" class="equipmentControlSwitch">倒计时</span>
+						<div class="fnName equipmentControlIcon" id="listName"></div>
+                    </div>
+                    <div class="fnBox">
+                        <img src="./static/img/ic_daojishi_on.png" class="hotIcon openIcon" id="timer_img">
+                    </div>
+                </div>
+                <ul class="spinnerWrap " id="gearsList">
+                    <li  class='spinnerList'></li>
+                    <li  class='spinnerList'></li>
+                    <li  class='spinnerList'></li>
+                    <li  class='spinnerList'></li>
+                </ul>
+            </div>
+            <div class="slideCom">
+                <div class="sliderWrap">
+                    <p class="equipmentControlSwitch" id="massage">按摩力度</p>
+                    <p class="sliderStatus sliderName equipmentControlIcon" id="massagelevel">
+                    </p>
+                </div>
+                <div class="rang">
+                    <div class="stripLeft"></div>
+                    <div class="stripRight"></div>
+                    <div class="slider"></div>
+                </div>
+            </div>
+        </div>
+        <div class="backgroundColor"></div>
+        <div class="addHeight" id="debugInfo"></div>
+    </div>
+</body>
+
+<script src='./static/js/nonstandardBLE.js' defer type='text/javascript'></script>
+<script src='./static/js/index.js' type='text/javascript' defer></script>
+<script src='./static/js/sendService.js' defer></script>
+<script src="http://eruda.liriliri.io/eruda.min.js"></script>
+<script>
+    eruda.init();
+</script>
+
+
+</html>
